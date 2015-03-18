@@ -1,0 +1,93 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Lora', serif;
+    color: white
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar .nav,
+.navbar .nav > li {
+    float:none;
+    display:inline-block;
+    /*display:inline; /* ie7 fix */
+    /*zoom:1; /* hasLayout ie7 trigger */
+    vertical-align: top;
+    font-size: 18px;
+    padding-left:30px;
+    padding-right:30px;
+    
+}
+
+ .navbar-inner {
+    text-align:center;
+}
+
+ body { 
+    background: url(/Content/Images/dark_wood.png) repeat 0 0;
+}
+
+ .solasimg{
+     height: 100%;
+     width: 100%;
+     padding-top: 25px
+ }
+
+ .container .padding{
+     padding-top: 20px;  
+ }
+
+ i{
+     color:white;
+ }
+
+ p{
+     color: white;
+     
+
+ }
+
+ h1{
+     color: white;
+     font-size: 50px;
+     font-family: 'Playfair Display SC', serif;
+ }
+
+ h2{
+     font-family: 'Playfair Display SC', serif;
+ }
+
+ .vectorimg{
+     display: inline-block;
+     /*padding-top: 5px;*/
+     padding-bottom: 7px;
+     padding-left: 12px;
+     padding-right: 12px;
+     float:right;
+     
+ }
+
+ 
+
+ 
+
+ 

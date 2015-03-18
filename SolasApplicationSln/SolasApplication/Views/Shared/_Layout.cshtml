@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/fontawesome/font-awesome.css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Playfair+Display+SC::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+    <script type="text/javascript">
+    WebFontConfig = {
+        google: { families: ['Lora::latin'] }
+    };
+    (function () {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })(); </script>
+
+
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                   <!-- @Html.ActionLink("Solas", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })-->
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Menu", "Menu", "Menu")</li>
+                        <li>@Html.ActionLink("Contact", "Booking", "Booking")</li>
+                        <li>@Html.ActionLink("Reviews", "Reviews", "Review")</li>
+
+                    </ul>
+                   <!--@Html.Partial("_LoginPartial")-->
+                </div>
+                </div>
+            </div>
+        </div>
+    <div class="container body-content">
+        @RenderBody()
+       <!-- <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>-->
+
+        <div class="navbar-fixed-bottom navbar-inverse footer">
+            <div class="container">
+                <ul class="nav navbar-nav vectorimg">
+                    <li class="middle"><a href="http://www.yelp.ie/biz/solas-new-york"><img class="vectorimg" src="/Content/Images/yelp.png" alt="Yelp"></a></li>
+                    <li class="middle"><a href="https://twitter.com/solasnyc"><img class="vectorimg" src="/Content/Images/twitter.png" alt="Twitter"></a></li>
+                    <li class="middle"><a href="https://www.facebook.com/SolasBarNYC"><img class="vectorimg" src="/Content/Images/facebook.png" alt="Facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+   
+    @RenderSection("scripts", required: false)
+</body>
+</html>
